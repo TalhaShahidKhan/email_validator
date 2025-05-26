@@ -7,9 +7,46 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <script src="src/js/script.js"></script>
+  <header>
+    <nav class="flex w-full py-7 bg-slate-600 flex-col md:flex-row items-center justify-evenly gap-8">
+      <div class="logo flex items-center justify-center gap-2">
+        <img src="/images/logo.svg" width="30px" alt="logo">
+        <h1 class="text-3xl font-bold text-white">CheckMail</h1>
+      </div>
+      <div class="links">
+        <ul class="w-full flex items-center justify-center gap-4 ">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="github">
+        <a href="https://github.com/TalhaShahidKhan/email_validator">GitHub</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="min-h-[90vh] flex flex-col items-center  md:justify-start justify-start gap-5">
+      <div class="lg:w-1/2 flex bg-slate-500 mt-9 py-9 md:px-10  rounded-2xl gap-8 flex-col items-center justify-center">
+        <h1 class="px-5 py-3 font-bold text-white text-2xl md:text-4xl text-center">Enter your email to validate</h1>
+        <input required type="email" id="email" class="py-2 px-3 bg-gray-300 my-3 rounded-2xl text-xl w-4/5 mx-5 text-center lg:w-1/2 lg:mx-auto " >
+        <button class="lg:w-1/5 w-1/2 font-bold text-lg mx-auto py-3 px-4 bg-black rounded-2xl text-white" id="submitBtn" type="submit">Submit</button>
+      </div>
+      <div  class="md:w-1/2 flex w-full bg-slate-500 py-9 md:px-10  md rounded-2xl gap-8 flex-col items-center justify-center" >
+        <h1 class="text-6xl font-bold text-white">Result</h1>
+        <ul id="result" class="font-bold text-2xl  text-white">
+        Your Results will show here
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="bg-slate-600 flex mt-8 flex-col md:flex-row items-center justify-center py-4">
+      <div>
+        <h1 class="text-sm text-center   text-white font-semibold">www.checkmail.com © All right reserved</h1>
+      </div>
+    </section>
+  </footer>
+  <script src="src/js/script.js" type="module" ></script>
 </body>
 </html>
